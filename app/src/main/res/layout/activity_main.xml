@@ -69,7 +69,10 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:text="TEST" />
+        tools:text="TEST"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -86,13 +89,16 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="10dp"
         tools:text="TEST" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:background="@color/divider" >
+        android:background="@color/divider">
 
         <Button
             android:id="@+id/seven_button"
@@ -171,6 +177,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/clear"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -412,7 +419,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/equals"
+            android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="35sp" />
     </GridLayout>
 </LinearLayout>
