@@ -22,6 +22,15 @@
     <string name="decimal">.</string>
     <string name="equals">=</string>
 
+    <string name="email_address">email Address</string>
+    <string name="password">Password: min 6 characters</string>
+    <string name="login">Login</string>
+    <string name="bmicalc">Number System Converter</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+
+
     <string-array name="spinner_items">
         <item>Binary</item>
         <item>Decimal</item>
