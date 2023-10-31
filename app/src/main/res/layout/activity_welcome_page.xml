@@ -14,9 +14,10 @@
         android:layout_marginTop="200dp"
         android:fontFamily="@font/raleway"
         android:text="@string/conv"
-        android:textColor="#18FFFF"
+        android:textColor="#0B1212"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:textAllCaps="true"
         android:gravity="center"/>
 
 <!--    <ImageView-->

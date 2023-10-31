@@ -194,7 +194,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         int digits = digitsMap.get(mode);
         for (int i = 0; i < digits; i++) {
             buttons[i].setEnabled(true);
-            buttons[i].setTextColor(getColor(R.color.white));
+            buttons[i].setTextColor(getColor(R.color.yellow));
         }
         for (int i = digits; i < 16; i++) {
             buttons[i].setEnabled(false);

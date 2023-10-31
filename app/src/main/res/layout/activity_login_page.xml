@@ -16,6 +16,7 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/raleway"
         android:text="@string/conv"
+        android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:textStyle="bold"
