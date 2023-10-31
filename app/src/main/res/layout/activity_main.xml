@@ -69,7 +69,10 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:text="TEST" />
+        tools:text="TEST"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -86,13 +89,16 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="10dp"
         tools:text="TEST" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:background="@color/divider" >
+        android:background="@color/divider">
 
         <Button
             android:id="@+id/seven_button"
@@ -107,7 +113,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/seven"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -123,7 +129,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/eight"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -139,7 +145,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/nine"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -155,7 +161,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/f"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -171,6 +177,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/clear"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -187,7 +194,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/four"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -203,7 +210,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/five"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -219,7 +226,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/six"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -235,7 +242,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/e"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <ImageButton
@@ -267,7 +274,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/one"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -283,7 +290,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/two"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -299,7 +306,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/three"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -315,7 +322,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/d"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
 <!--        <Button-->
@@ -347,7 +354,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/zero"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -363,7 +370,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/a"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -379,7 +386,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/b"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -395,7 +402,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/c"
-            android:textColor="@color/yellow"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <Button
@@ -412,7 +419,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/equals"
+            android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="35sp" />
     </GridLayout>
 </LinearLayout>

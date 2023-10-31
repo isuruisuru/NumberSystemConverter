@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
@@ -195,10 +196,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         for (int i = 0; i < digits; i++) {
             buttons[i].setEnabled(true);
             buttons[i].setTextColor(getColor(R.color.yellow));
+            buttons[i].setTypeface(null, Typeface.BOLD);
         }
         for (int i = digits; i < 16; i++) {
             buttons[i].setEnabled(false);
-            buttons[i].setTextColor(getColor(R.color.divider));
+            buttons[i].setTextColor(getColor(R.color.fade));
         }
     }
 
