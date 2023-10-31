@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorControlNormal"
+    android:background="@color/black"
     tools:context=".RegisterPage">
 
     <TextView
@@ -16,24 +16,25 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:fontFamily="times new roman"
-        android:text="@string/bmicalc"
-        android:textColor="#F4511E"
+        android:fontFamily="@font/raleway"
+        android:text="@string/conv"
+        android:textColor="@color/white"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_marginBottom="50dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="@string/register"
-        android:textColor="@color/mediumPurple"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/signup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="140dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/register"-->
+<!--        android:textColor="@color/mediumPurple"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
 
     <EditText
         android:id="@+id/fullname"
@@ -45,10 +46,10 @@
         android:padding="20dp"
         android:background="@drawable/edit_text_border"
         android:hint="@string/name"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:inputType="text"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:drawableEnd="@drawable/baseline_person_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,10 +70,10 @@
         android:padding="20dp"
         android:background="@drawable/edit_text_border"
         android:hint="@string/email_address"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:inputType="textEmailAddress"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:drawableEnd="@drawable/baseline_mail_outline_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,11 +93,11 @@
         android:layout_marginEnd="32dp"
         android:padding="20dp"
         android:background="@drawable/edit_text_border"
-        android:hint="@string/password"
-        android:textColorHint="@color/black"
+        android:hint="@string/pswrd"
+        android:textColorHint="@color/white"
         android:inputType="textPassword"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:drawableEnd="@drawable/baseline_lock_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,10 +119,10 @@
         android:background="@drawable/edit_text_border"
         android:hint="@string/confirm_password"
         android:drawableEnd="@drawable/baseline_lock_24"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:inputType="textPassword"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -139,9 +140,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="@color/mediumPurple"
+        android:backgroundTint="@color/white"
         android:text="@string/register"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="DuplicateSpeakableTextCheck"

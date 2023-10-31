@@ -39,7 +39,7 @@ public class RegisterPage extends AppCompatActivity {
 
                 // Validate full name
                 if (fullName.isEmpty()) {
-                    fullNameEditText.setError("Full name is required");
+                    fullNameEditText.setError("Name is required");
                     return;
                 }
 
