@@ -19,19 +19,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.math.BigInteger;
 import java.util.HashMap;
-
-/**
- * Main Activity class for the number converter application.
- * @author Thomas Hart
- */
 public class MainActivity extends Activity implements View.OnClickListener {
 
     @Retention(RetentionPolicy.SOURCE)
-    @IntDef({BINARY, DECIMAL, HEXADECIMAL, OCTAL})
+    @IntDef({BINARY, DECIMAL, HEX, OCTAL})
     private @interface NumberSystem {}
     private static final int BINARY = 0;
     private static final int DECIMAL = 1;
-    private static final int HEXADECIMAL = 2;
+    private static final int HEX = 2;
     private static final int OCTAL = 3;
 
     private @NumberSystem int inputSystem;

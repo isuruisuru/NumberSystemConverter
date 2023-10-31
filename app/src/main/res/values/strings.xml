@@ -25,7 +25,7 @@
     <string-array name="spinner_items">
         <item>Binary</item>
         <item>Decimal</item>
-        <item>Hexadecimal</item>
+        <item>Hex</item>
         <item>Octal</item>
     </string-array>
 </resources>
