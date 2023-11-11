@@ -17,13 +17,11 @@ public class WelcomePage extends AppCompatActivity {
         Button registerButton = findViewById(R.id.Registerbtn);
 
         loginButton.setOnClickListener(view -> {
-            // Create an intent to start the Login activity
             Intent intent = new Intent(WelcomePage.this, LoginPage.class);
             startActivity(intent);
         });
 
         registerButton.setOnClickListener(view -> {
-            // Create an intent to start the Register_Page activity
             Intent intent = new Intent(WelcomePage.this, RegisterPage.class);
             startActivity(intent);
         });

@@ -44,10 +44,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button[] buttons;
 
-    /**
-     * Initializes Activity when it is created.
-     * @param savedInstanceState data from saved instance.
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,10 +61,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         initSpinners();
     }
 
-    /**
-     * Handles click of buttons in the application.
-     * @param view the button that was clicked.
-     */
     @Override
     public void onClick(View view) {
         view.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
@@ -100,9 +92,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    /**
-     * Initializes spinners with number system options and listeners for changes to the selected option.
-     */
     private void initSpinners() {
         inputSpinner = findViewById(R.id.input_spinner);
         outputSpinner = findViewById(R.id.outputSpinner);
@@ -140,9 +129,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
     }
 
-    /**
-     * Initializes an array of input buttons in the layout to allow for activation based on number system.
-     */
     private void initButtons() {
         buttons = new Button[] {
                 findViewById(R.id.zero_button),
@@ -164,9 +150,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         };
     }
 
-    /**
-     * Initializes HashMap that gets number of digits in each number system.
-     */
     private void initHashMap() {
         digitsMap.put(0, 2);
         digitsMap.put(1, 10);
@@ -174,9 +157,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         digitsMap.put(3, 8);
     }
 
-    /**
-     * Initializes functionality for copying answers to the Clipboard.
-     */
     private void initAnswerClipboard() {
         answerTextView.setOnClickListener(view -> {
             if (!answer.equals("")) {
@@ -187,10 +167,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
     }
 
-    /**
-     * Called when input mode changes to update which buttons are enabled.
-     * @param mode the mode to change to.
-     */
     private void setMode(@NumberSystem int mode) {
         int digits = digitsMap.get(mode);
         for (int i = 0; i < digits; i++) {
@@ -204,9 +180,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    /**
-     * Clears input and answer text.
-     */
     private void clear() {
         inputText = "";
         answer = "";
@@ -214,9 +187,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         answerTextView.setText("");
     }
 
-    /**
-     * Converts input number to selected output number system.
-     */
     private void calculate() {
         BigInteger answerInt = new BigInteger(inputText, digitsMap.get(inputSystem));
         answer = answerInt.toString(digitsMap.get(outputSystem)).toUpperCase();
